@@ -32,9 +32,11 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  }
+  '/': { view: 'homepage'},
+  'get /score/:id_game': 'ScoreController.score_by_game',
+  'get /score/player/:id_player': 'ScoreController.score_by_player',
+  'post /score/save': 'ScoreController.add_score',
+
 
   /***************************************************************************
   *                                                                          *

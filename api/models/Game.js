@@ -8,6 +8,11 @@
 module.exports = {
 
   attributes: {
+      id: {
+        unique: true,
+        autoIncrement: true,
+        primaryKey: true
+      },
       name: 'string',
       nb_player: 'string'
   }
